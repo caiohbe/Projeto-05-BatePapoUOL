@@ -11,6 +11,53 @@ ion-icon {
     font-size: 45px;
 }
 
+strong {
+    font-weight: 700;
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.login img {
+    width: 130px;
+    height: 92px;
+    margin-top: 72px;
+}
+
+.login input {
+    margin-top: 94px;
+    width: 261px;
+    height: 54px;
+    border: 1px #D7D7D7 solid;
+    color: #AEAEAE;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.login button {
+    width: 109px;
+    height: 45px;
+    margin-top: 15px;
+    border: none;
+    color: #696969;
+    background-color: #E7E7E7;
+    border-radius: 9px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
 .header, .footer {
     width: 100%;
     height: 80px;
@@ -34,7 +81,7 @@ ion-icon {
     margin-right: 21px;
 }
 
-.content {
+.chat {
     margin-top: 106px;
 }
 
@@ -44,7 +91,7 @@ ion-icon {
     bottom: 0;
 }
 
-input {
+.footer input {
     font-style: italic;
     border: none;
     font-size: 18px;
@@ -52,9 +99,34 @@ input {
     color: black;
     margin-left: 17px;
     width: 80%;
+    height: 30px;
 }
 
 .footer ion-icon {
     font-size: 26px;
     margin-right: 17px;
+}
+
+.joined {
+    background-color: #DCDCDC;
+}
+
+.chat div {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+span {
+    color: #AAAAAA;
+}
+
+p {
+    display: inline;
 }
