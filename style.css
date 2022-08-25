@@ -5,6 +5,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
+    margin-bottom: 84px;
 }
 
 ion-icon {
@@ -110,8 +111,12 @@ strong {
     margin-right: 17px;
 }
 
-.joined {
+.status {
     background-color: #DCDCDC;
+}
+
+.message {
+    background-color: #FFFFFF;
 }
 
 .chat div {
