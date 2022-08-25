@@ -92,7 +92,6 @@ strong {
 }
 
 .footer input {
-    font-style: italic;
     border: none;
     font-size: 18px;
     line-height: 21px;
@@ -101,6 +100,10 @@ strong {
     width: 80%;
     height: 30px;
 }
+
+.footer input:placeholder-shown {
+    font-style: italic;
+ }
 
 .footer ion-icon {
     font-size: 26px;
