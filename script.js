@@ -37,6 +37,9 @@ function refreshChat() {
         
         chat.lastElementChild.scrollIntoView()
     })
+    .catch(() => {
+        location.reload()
+    })
 }
 
 function login(button) {

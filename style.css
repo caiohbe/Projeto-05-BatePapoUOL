@@ -132,6 +132,7 @@ strong {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    word-break: break-word;
 }
 
 span {
