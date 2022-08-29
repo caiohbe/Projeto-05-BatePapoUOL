@@ -1,6 +1,6 @@
 const chat = document.querySelector('.chat');
-let lastMsg
-let to = 'Todos'
+let lastMsg;
+let to = 'Todos';
 
 function refreshChat() {
     axios
@@ -35,10 +35,10 @@ function refreshChat() {
             chat.innerHTML += `${renderMsg[i]}`;
         }
         
-        chat.lastElementChild.scrollIntoView()
+        chat.lastElementChild.scrollIntoView();
     })
     .catch(() => {
-        location.reload()
+        location.reload();
     })
 }
 
@@ -81,12 +81,12 @@ function login(button) {
 }
 
 function sendMsg() {
-    const textInput = document.querySelector('.footer input')
+    const textInput = document.querySelector('.footer input');
     msgText = textInput.value;
-    textInput.value = ''
+    textInput.value = '';
 
     msgFrom = document.querySelector('.login input').value;
-    msgType = "message"
+    msgType = "message";
 
     const msgObj = {
         from: msgFrom,
@@ -97,5 +97,5 @@ function sendMsg() {
 
     axios
     .post('https://mock-api.driven.com.br/api/v6/uol/messages', msgObj)
-    .then(refreshChat)
+    .then(refreshChat);
 }
